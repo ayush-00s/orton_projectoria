@@ -31,11 +31,11 @@ const Login = () => {
     <div className="flex h-screen">
       <div className="w-1/2 flex flex-col justify-center items-center bg-white p-8">
         {/* Card container */}
-        <div className="w-full max-w-sm border rounded-xl p-6 shadow-sm">
+        <div className="w-full max-w-sm border-none rounded-2xl p-6 shadow-xl">
           {/* Logo area */}
           <div className="w-full flex flex-col items-center">
-            <div className="w-20 h-20 mb-3 rounded-full border flex items-center justify-center overflow-hidden shadow-sm">
-              <img src="/vite.svg" alt="Logo" className="w-12 h-12" />
+            <div className="w-20 h-20 mb-3 border-none flex items-center justify-center overflow-hidden shadow-none">
+              <img src="/Legal.jpeg" alt="Logo" className="w-12 h-12" />
             </div>
             <h1 className="text-3xl font-bold">Welcome Back</h1>
             <p className="text-gray-500 text-sm mt-1">Sign in to continue</p>
@@ -70,7 +70,7 @@ const Login = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-          <button onClick={handleEmailLogin} className="w-full bg-blue-600 text-white py-2 rounded-lg shadow-sm hover:opacity-95 transition-opacity focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">
+          <button onClick={handleEmailLogin} className="w-full bg-blue-600 text-white py-2 rounded-lg shadow-sm hover:opacity-95 transition-opacity focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 hover:to-blue-900">
             Continue
           </button>
 
@@ -79,8 +79,8 @@ const Login = () => {
       </div>
       <div className="w-1/2 flex justify-center items-center bg-gradient-to-b from-gray-900 to-gray-700 text-white">
         <h2 className="text-2xl font-semibold text-center px-10">
-          Long-term memory for AI <br />
-          <span className="text-cyan-400">Start building for free</span>
+          From confusion to conclusion<br />
+          <span className="text-cyan-400">fast, fair, secure.</span>
         </h2>
       </div>
     </div>
